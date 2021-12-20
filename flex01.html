@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex01</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        
+        h1{text-align: center;}
+        .par-box{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            /* 플렉스 컨테이너 / 플렉서블 박스 */
+            display: flex;
+            /* 주축 가로 */
+            flex-direction: row;
+            /* 주축 가로 거꾸로 */
+            /* flex-direction: row-revese; */
+            /* 주축 세로 */
+            /* flex-direction: column; */
+            /* 주축 세로 거꾸로 */
+            /* flex-direction: column-reverse; */
+
+            /* 플렉스 컨테이너 줄바꿈 허용여부 */
+            flex-wrap: nowrap;
+            /* flex-wrap: wrap; */
+        }
+        .par-box{
+            height: 300px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .child-box{
+            display: block;
+            width: 600px;
+            height: 150px;
+        }
+        .child-box01{
+            background-color: #f00;
+        }
+        .child-box02{
+            background-color: #0f0;
+        }
+        .child-box03{
+            background-color: #00f;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="par-box clearfix">
+        <div class="child-box child-box01"></div>
+        <div class="child-box child-box02"></div>
+        <div class="child-box child-box03"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci cum rerum nesciunt soluta minus dolorem quod aut esse! Illo optio laudantium officiis commodi nam voluptates ratione quisquam obcaecati eos.
+    In consectetur adipisci veniam beatae doloribus eos doloremque quibusdam iste quasi pariatur repellendus maiores tempora alias sed quidem quis, consequatur placeat repudiandae! Sed explicabo alias porro similique iure recusandae fuga!
+    Cupiditate sed blanditiis quis quidem reprehenderit sequi consectetur ipsam suscipit, hic magni deleniti labore vero, atque ipsa id nulla perspiciatis recusandae nam fugiat? A quis, harum unde obcaecati eius ex.
+    Placeat, facere culpa doloremque corporis veritatis delectus quam eos voluptate voluptas cupiditate! Hic ratione excepturi explicabo animi fuga esse aspernatur non placeat. Eum possimus eveniet natus mollitia assumenda dolorum ab?
+    Magni voluptas placeat optio, eveniet est maiores ad sit, dignissimos distinctio natus ratione facere cumque vero autem facilis quia, nulla eaque quibusdam enim amet sed molestiae velit! Vitae, est facilis.</p>
+    
+</body>
+</html>
